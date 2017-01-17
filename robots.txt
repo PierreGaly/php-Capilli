@@ -1,0 +1,7 @@
+Sitemap: https://www.clubdelok.com/sitemap.xml
+
+User-agent: *
+Disallow: /class
+Disallow: /fonctions
+Disallow: /modele
+Disallow: /vue_*/php

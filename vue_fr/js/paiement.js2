@@ -1,0 +1,92 @@
+$(function()
+{
+	$('#paiement_cb').keydown(function(e)
+	{
+		if(e.keyCode == 8 || e.keyCode >= 37)
+		{
+			var chaine = $(this).val(), chaine2 = '';
+			
+			if(e.keyCode != 8 && e.keyCode >= 96 && e.keyCode <= 105)
+				chaine += (e.keyCode - 96);
+			
+			chaine = chaine.replace(/\D/g, '');
+			
+			if(e.keyCode == 8)
+				chaine = chaine.substr(0, chaine.length-1);
+			
+			chaine = chaine.substr(0, 16);
+			
+			for(var i=0; i<Math.ceil(chaine.length / 4.); i++)
+			{
+				chaine2 += chaine.substr(4*i, 4);
+				
+				if(chaine.length >= 4*(i+1) && i < 3)
+					chaine2 += '  ';
+			}
+			
+			$(this).val(chaine2);
+		}
+		
+		if(e.keyCode >= 37 || e.keyCode == 8)
+			return false;
+	});
+	
+	$('#paiement_crypto').keydown(function(e)
+	{
+		if(e.keyCode == 8 || e.keyCode >= 37)
+		{
+			var chaine = $(this).val();
+			
+			if(e.keyCode != 8 && e.keyCode >= 96 && e.keyCode <= 105)
+				chaine += (e.keyCode - 96);
+			
+			chaine = chaine.replace(/\D/g, '');
+			
+			if(e.keyCode == 8)
+				chaine = chaine.substr(0, chaine.length-1);
+			
+			chaine = chaine.substr(0, 3);
+			
+			$(this).val(chaine);
+		}
+		
+		if(e.keyCode >= 37 || e.keyCode == 8)
+			return false;
+	});
+	
+	$('#paiement_date').keydown(function(e)
+	{
+		if(e.keyCode == 8 || e.keyCode >= 37)
+		{
+			var chaine = $(this).val(), chaine2 = '';
+			
+			if(e.keyCode != 8 && e.keyCode >= 96 && e.keyCode <= 105)
+			{
+				if(chaine == '' && e.keyCode >= 98)
+					chaine = '0';
+				
+				chaine += (e.keyCode - 96);
+			}
+			
+			chaine = chaine.replace(/\D/g, '');
+			
+			if(e.keyCode == 8)
+				chaine = chaine.substr(0, chaine.length-1);
+			
+			chaine = chaine.substr(0, 4);
+			
+			for(var i=0; i<Math.ceil(chaine.length / 2.); i++)
+			{
+				chaine2 += chaine.substr(2*i, 2);
+				
+				if(chaine.length >= 2*(i+1) && i < 1)
+					chaine2 += ' / ';
+			}
+			
+			$(this).val(chaine2);
+		}
+		
+		if(e.keyCode >= 37 || e.keyCode == 8)
+			return false;
+	});
+});

@@ -1,0 +1,476 @@
+
+/* Couleur "Capilli, Votre coiffeur à domicile"
+*/
+h2
+{
+	text-align: center;
+	margin: 20px auto 30px auto;
+	color: black;
+}
+
+@media (min-width: 768px)
+{
+	#mc_index
+	{
+		border-radius: 20px 0 0 20px;
+	}
+
+	#submit_index
+	{
+		border-radius: 20px 20px 20px 20px;
+
+	}
+
+	.text-center-sm
+	{
+			text-align: center;
+	}
+
+	#annonces
+	{
+		overflow-y: auto;
+	}
+}
+
+@media (max-width: 767px)
+{
+	#mc_index
+	{
+		border-radius: 0;
+	}
+
+	#submit_index
+	{
+		border-radius: 0;
+	}
+
+	.text-center-sm
+	{
+			text-align: left;
+	}
+
+	#annonces
+	{
+		overflow-y: initial;
+	}
+}
+
+
+{
+	text-align: center;
+	margin-bottom: 20px;
+	color: red;
+}
+
+body
+{
+  font-family: "Open Sans";
+}
+
+.row
+{
+	margin: 0;
+	font-family: 'theboldfont'
+}
+
+
+
+@font-face
+{
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Source Sans Pro Semibold"), local("SourceSansPro-Semibold"), url("https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGJ6-ys_j0H4QL65VLqzI3wI.woff") format("woff");
+}
+
+@font-face
+{
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 550;
+  src: local("Open Sans"), local("OpenSans"), url("https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff") format("woff");
+}
+
+.blue_custom
+{
+	color: black;
+}
+
+.rose_custom
+{
+	color: #056FCB;
+}
+
+.navbar
+{
+	font-family: "Source Sans pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.video_link
+{
+	box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+	background-size: cover;
+	display: block;
+	cursor: pointer;
+	color: white;
+}
+
+.video_link:hover
+{
+	box-shadow: 0 0 15px white;
+	color: white;
+}
+
+.video_link span
+{
+	padding: 28px;
+	opacity: 0.8;
+	font-size: 75px;
+	border: 10px solid white;
+	border-radius: 50%;
+}
+
+.video_link:hover span
+{
+	opacity: 1;
+}
+
+#navbar ul
+{
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	position: relative;
+	z-index: 10;
+}
+
+nav .navbar-toggle
+{
+	margin: 13px 15px 13px 0;
+}
+
+#call_div
+{
+	position: relative;
+	background-color: #3182BE;
+}
+
+#call_div p
+{
+	right: 0;
+	display: inline;
+	color: white;
+}
+
+#call_div p, #call_div p a
+{
+	color: black;
+}
+
+#navbar-header
+{
+	list-style-type: none;
+	padding-left: 0;
+	height: 47px;
+}
+
+#navbar-header > li
+{
+	display: inline-block;
+	margin-top: 17px;
+}
+
+#navbar-header > li > ul
+{
+	top: 37px;
+}
+
+.navbar-default #navbar-header > li > a
+{
+	font-size: 15px;
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+	padding-bottom: 20px !important;
+	padding-top: 20px !important;
+	text-decoration: none;
+	color: black;
+}
+
+.navbar-default #navbar-header > li > a:hover
+{
+	color: white;
+	background-color: black;
+}
+
+.navbar-default #navbar-header > .open > a, .navbar-default #navbar-header > .open > a:focus, .navbar-default #navbar > .open > a:hover
+{
+	color: white;
+	background-color: #3182BE;
+}
+
+nav, .navbar
+{
+	background-color: rgba(255, 255, 255, 0.8);
+	margin-bottom: 0;
+	border: 0;
+	border-top: 5px solid white;
+	color: white;
+	position: relative;
+}
+
+#navbar_categories
+{
+	background-color: rgb(250, 250, 250);
+	border: 0;
+	min-height: 57px;
+	height: 57px;
+	z-index: 10;
+	border-radius: 0;
+	border-bottom: 1px solid #EEE;
+	font-size: 1.1em;
+}
+
+#navbar_categories #navbar
+{
+	background-color: rgb(250, 250, 250);
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+}
+
+#navbar_categories .navbar-header
+{
+	background-color: rgb(250, 250, 250);
+	min-height: 55px;
+	height: 55px;
+	margin: 0;
+}
+
+#navbar_categories .container-fluid
+{
+	background-color: rgb(250, 250, 250);
+	height: 100%;
+	padding: 0;
+}
+
+#navbar_categories li
+{
+	background-color: rgb(250, 250, 250);
+	height: 55px;
+}
+
+#navbar_categories li > a
+{
+	height: 100%;
+	border-radius: 0;
+	background-color: white;
+	width: 100%;
+	color: rgb(80, 80, 80);
+	padding: 0;
+	line-height: 55px;
+}
+
+#navbar_categories li > a:hover, #navbar_categories li > a.active
+{
+	color: #3182BE;
+	background-color: #EEE;
+	border-left: 1px solid white;
+	border-right: 1px solid white;
+}
+
+/*
+
+
+#navbar_categories li > a
+{
+	color: white;
+	height: 35px;
+	border-radius: 0;
+	background-color: rgb(240, 240, 240);
+	color: #333;
+}
+
+#navbar_categories .navbar-header
+{
+	background-color: rgb(240, 240, 240);
+}
+
+#navbar_categories .open > a, #navbar_categories .open > a:focus, #navbar_categories .open > a:hover, #navbar_categories li > a:hover
+{
+	background-color: #3182BE;
+}
+
+#navbar_categories .dropdown-menu a
+{
+	color: black;
+	background-color: white;
+}
+
+#navbar_categories .dropdown-menu
+{
+	min-width: 100%;
+	top: 32px;
+}
+
+#navbar_categories .in
+{
+	overflow: visible;
+}
+*/
+
+.btn, .form-control, .modal-content, .alert, .dropdown-menu, .panel, .input-group-addon, .input-group-lg > .input-group-btn > .btn, .label
+{
+	border-radius: 4px;
+}
+
+.modal-header
+{
+	background-color: #F1F1F1;
+}
+
+.btn-custom, .badge-custom, .label-custom
+{
+	background-color: black;
+	color: white;
+}
+
+.btn-custom:hover
+{
+	background-color: white;
+}
+
+.blog{
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0 0 10px grey;
+	padding: 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+.formulaire
+{
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0 0 10px grey;
+	padding: 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+}
+
+.formulaire legend
+{
+	color: #3182BE;
+}
+
+.row_index
+{
+	background-image: url("sources/header.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+
+}
+
+.hide
+{
+	display: none;
+}
+
+#content>.row
+{
+	padding-bottom: 10px;
+	margin: 0;
+	/*border-bottom: 1px solid rgb(230, 230, 230);*/
+}
+
+/* Couleur Bloc Glyphicon    */
+
+#content>.row:nth-child(odd)
+{
+	background-color: white;
+}
+
+#content>.row:nth-child(even)
+{
+	background-color: grey;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) inset;
+
+}
+
+/*texte en dessous glyphicon*/
+
+.row_content
+{
+	max-width: 1200px;
+	margin: 50px;
+	color: black;
+}
+
+footer
+{
+	background-color: white;
+	color: white;
+	padding: 0;
+}
+
+footer h4
+{
+	color: #FA5858;
+	text-transform:uppercase;
+}
+
+footer a
+{
+	color: grey;
+}
+
+footer a:hover
+{
+	color: white;
+	text-decoration: underline;
+}
+
+#menu_perso
+{
+	background-color: rgb(250, 250, 250);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	width: 200px;
+	display: table-cell;
+	height:100%;
+	text-align: center;
+	vertical-align: top;
+}
+
+#menu_perso .row
+{
+	margin: 0;
+}
+
+#menu_perso .glyphicon
+{
+	font-size: 50px;
+
+
+}
+
+#menu_perso a
+{
+	display: block;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+#menu_perso a.active
+{
+	display: block;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	color: #F75098;
+}
+
+#menu_perso a:hover
+{
+	text-decoration: none;
+}

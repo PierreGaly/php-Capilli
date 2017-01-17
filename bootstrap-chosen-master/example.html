@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap + Chosen</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bootstrap-chosen.css" />
+    <style>
+      body { margin-bottom: 144px; }
+      header { margin: 72px 0 36px; }
+      header h1 { font-size: 54px; }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="http://harvesthq.github.io/chosen/chosen.jquery.js"></script>
+    <script>
+      $(function() {
+        $('.chosen-select').chosen();
+        $('.chosen-select-deselect').chosen({ allow_single_deselect: true });
+      });
+    </script>
+  </head>
+  <body>
+      <div class="row">
+      
+      
+      <div class="modal fade modal_new_message" role="dialog" aria-labelledby="gridSystemModalLabel" id="new_message">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<form role="form" method="post" action="">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="gridSystemModalLabel">Nouvelle conversation</h4>
+				</div>
+				
+				<div class="modal-body">
+					<div class="form-group">
+						<label class="control-label" for="new_message_destinataires">Destinataire(s)</label>
+						<input id="new_message_destinataires" type="text" class="form-control" placeholder="Destinataire" required>
+						
+						<select data-placeholder="Choose a Country" class="chosen-select" multiple tabindex="4">
+              <option value=""></option>
+              <option value="United States">United States</option>
+              <option value="United Kingdom">United Kingdom</option>
+						</select>
+					</div>
+					
+					<div class="form-group">
+						<label class="control-label" for="new_message_objet">Objet</label>
+						<input name="new_message_objet" id="new_message_objet" type="text" class="form-control" placeholder="Objet" required>
+					</div>
+					
+					<div class="form-group">
+						<label class="control-label" for="new_message_message">Message</label>
+						<textarea class="form-control" placeholder="Entrez votre message" id="new_message_message" name="new_message_message" required></textarea>
+					</div>
+				</div>
+				
+				<div class="modal-footer">
+					<button class="btn btn-custom" role="submit" disabled>Envoyer <span class="glyphicon glyphicon-chevron-right"></span></button>
+				</div>
+			</form>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+        <div class="col-lg-3">
+          <form>
+            <input type="text" class="form-control" value="Ordinary text box" />
+          </form>
+        </div>
+        <div class="col-lg-3">
+        <button class="btn btn-custom center-block" data-toggle="modal" data-target=".modal_new_message"><span class="glyphicon glyphicon-plus"></span> Nouvelle conversation</button>
+            <select data-placeholder="Choose a Country" class="chosen-select" multiple tabindex="4">
+              <option value=""></option>
+              <option value="United States">United States</option>
+              <option value="United Kingdom">United Kingdom</option>
+              <option value="Afghanistan">Afghanistan</option>
+              <option value="Albania">Albania</option>
+            </select>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
